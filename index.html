@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>회계원리 1~4장 시험 노트</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d2430;--mut:#5f6878;--card:#fff;--bd:#d9d6cc;--as:#2b5fa8;--li:#b7791f;--eq:#2f855a;--ex:#c0392b;--sf:#eef1f6;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--fg:#e8e9ec;--mut:#9aa3b2;--card:#1d222b;--bd:#343b48;--as:#7aa7ea;--li:#e0aa4f;--eq:#5fc28d;--ex:#ee8173;--sf:#232936;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14171d;--fg:#e8e9ec;--mut:#9aa3b2;--card:#1d222b;--bd:#343b48;--as:#7aa7ea;--li:#e0aa4f;--eq:#5fc28d;--ex:#ee8173;--sf:#232936;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 "Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+main{max-width:860px;margin:0 auto;padding:16px 14px 48px}
+h1{font:800 26px/1.3 "Noto Serif KR","Batang",serif;margin:8px 0 4px}
+h2{font:800 21px/1.3 "Noto Serif KR","Batang",serif;margin:44px 0 10px;padding-bottom:6px;border-bottom:3px solid var(--as)}
+h3{font-size:16px;margin:24px 0 8px}
+p{margin:6px 0}.mut{color:var(--mut);font-size:13px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+nav a{padding:5px 12px;border:1px solid var(--bd);border-radius:999px;color:var(--fg);text-decoration:none;font-size:14px;background:var(--card)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:stretch;margin:10px 0}
+.b{flex:1 1 120px;border:1.5px solid var(--bd);background:var(--card);border-radius:10px;padding:8px 10px;font-size:14px}
+.b small{display:block;color:var(--mut);font-size:12px;line-height:1.4;margin-top:2px}
+.ar{align-self:center;color:var(--mut);font-weight:700}
+.as{border-color:var(--as)}.li{border-color:var(--li)}.eq{border-color:var(--eq)}.ex{border-color:var(--ex)}
+.as b,.as strong{color:var(--as)}.li strong{color:var(--li)}.eq strong{color:var(--eq)}.ex strong{color:var(--ex)}
+.key{background:var(--sf);border-left:4px solid var(--as);padding:8px 12px;border-radius:0 8px 8px 0;margin:10px 0;font-size:14px}
+.warn{border-left-color:var(--ex)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px;background:var(--card)}
+th,td{border:1px solid var(--bd);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--sf)}
+svg{max-width:100%;height:auto;display:block;margin:8px auto}
+svg text{fill:var(--fg);font-family:inherit}
+.bar{display:flex;align-items:center;gap:8px;margin:3px 0;font-size:13px}
+.bar span:first-child{flex:0 0 112px}
+.bar i{display:block;height:18px;border-radius:3px;background:var(--as)}
+.bar i.n{background:var(--ex)}.bar i.s{background:var(--eq)}
+.fm{font-weight:700;text-align:center;padding:8px;background:var(--sf);border-radius:8px;margin:8px 0;font-size:14.5px}
+</style></head><body><main>
+<h1>회계원리 1~4장 시험 노트</h1>
+<p class="mut">사례와 함께하는 회계원리 제5판 · 색 규칙: <strong style="color:var(--as)">자산 파랑</strong> / <strong style="color:var(--li)">부채 주황</strong> / <strong style="color:var(--eq)">자본 초록</strong> / <strong style="color:var(--ex)">비용 빨강</strong></p>
+<nav><a href="#c1">1장 입문</a><a href="#c2">2장 기중처리</a><a href="#c3">3장 결산</a><a href="#c4">4장 표시</a></nav>
+
+<h2 id="c1">1장. 회계학 입문</h2>
+<h3>회계 = 정보시스템</h3>
+<div class="row"><div class="b">기업<small>경영활동</small></div><span class="ar">→</span><div class="b as"><strong>식별</strong><small>인식 · 발생주의</small></div><span class="ar">→</span><div class="b as"><strong>측정</strong><small>원가 · 시가</small></div><span class="ar">→</span><div class="b as"><strong>전달</strong><small>재무제표</small></div><span class="ar">→</span><div class="b">정보이용자<small>의사결정 후 다시 기업으로</small></div></div>
+
+<h3>재무회계 vs 관리회계</h3>
+<div class="tw"><table><tr><th></th><th>재무회계</th><th>관리회계(원가회계 포함)</th></tr><tr><td>대상</td><td>외부(주주, 채권자)</td><td>내부(경영자, 종업원)</td></tr><tr><td>기준</td><td>회계기준 있음</td><td>없음</td></tr><tr><td>시기·형식</td><td>정기 · 재무제표</td><td>수시 · 형식 없음</td></tr><tr><td>정보</td><td>과거</td><td>미래(예측) 또는 과거</td></tr></table></div>
+<p class="mut">세무회계 = 세금 계산·세무계획 / 회계감사 = 외부감사인이 감사의견 표명 / 비영리회계 = 정부, 학교, 병원</p>
+
+<h3>3대 경영활동 → 재무제표</h3>
+<div class="row"><div class="b as"><strong>영업활동</strong><small>매입 → 생산 → 판매 → 대금회수</small></div><div class="b as"><strong>투자활동</strong><small>자본재 투자, 투자자산 취득·처분</small></div><div class="b as"><strong>재무활동</strong><small>자금 조달·상환</small></div></div>
+<div class="row"><div class="b"><strong>재무상태표</strong><small>특정 시점 재무상태</small></div><div class="b"><strong>포괄손익계산서</strong><small>일정 기간 경영성과</small></div><div class="b"><strong>현금흐름표</strong><small>일정 기간 현금 유출입</small></div><div class="b"><strong>자본변동표</strong><small>자본의 변동</small></div><div class="b"><strong>주석</strong><small>작성기준, 회계정책</small></div></div>
+
+<h3>재무상태표 구조 (회계등식)</h3>
+<svg viewBox="0 0 640 230" role="img" aria-label="자산=부채+자본 구조도">
+<rect x="10" y="20" width="250" height="190" rx="10" fill="none" stroke="var(--as)" stroke-width="2.5"/>
+<text x="135" y="46" text-anchor="middle" font-weight="700">자산 (조달된 자금의 운용)</text>
+<rect x="30" y="62" width="210" height="62" rx="6" fill="var(--sf)" stroke="var(--as)"/><text x="135" y="88" text-anchor="middle" font-size="14">유동자산</text><text x="135" y="108" text-anchor="middle" font-size="11" fill="var(--mut)">현금, 매출채권, 재고</text>
+<rect x="30" y="134" width="210" height="62" rx="6" fill="var(--sf)" stroke="var(--as)"/><text x="135" y="160" text-anchor="middle" font-size="14">비유동자산</text><text x="135" y="180" text-anchor="middle" font-size="11" fill="var(--mut)">유형, 무형, 장기금융</text>
+<text x="300" y="120" text-anchor="middle" font-size="30" font-weight="800">=</text>
+<rect x="340" y="20" width="290" height="190" rx="10" fill="none" stroke="var(--fg)" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="485" y="46" text-anchor="middle" font-weight="700">자금의 조달원천</text>
+<rect x="355" y="58" width="260" height="56" rx="6" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="485" y="82" text-anchor="middle" font-size="14" fill="var(--li)" font-weight="700">부채 = 타인자본 (상환의무)</text><text x="485" y="100" text-anchor="middle" font-size="11" fill="var(--mut)">유동부채 + 비유동부채</text>
+<rect x="355" y="124" width="260" height="76" rx="6" fill="var(--sf)" stroke="var(--eq)" stroke-width="2"/><text x="485" y="146" text-anchor="middle" font-size="14" fill="var(--eq)" font-weight="700">자본 = 자기자본 (잔여지분)</text><text x="485" y="166" text-anchor="middle" font-size="11" fill="var(--mut)">납입자본 + 이익잉여금</text><text x="485" y="184" text-anchor="middle" font-size="11" fill="var(--mut)">+ 기타포괄손익누계액(기타자본)</text>
+</svg>
+<div class="key">자본 = 자산 − 부채 · 채권자 청구권이 우선, 주주는 <b>잔여지분</b>만 가짐 · 주주는 <b>유한책임</b></div>
+
+<h3>자본이 움직이는 길 (예: 기초 120 → 기말 145)</h3>
+<div class="row"><div class="b eq"><strong>기초자본 120</strong><small>납입 80 + 잉여금 10 + 기타 30</small></div><span class="ar">+</span><div class="b eq"><strong>당기순이익 20</strong><small>→ 이익잉여금</small></div><span class="ar">+</span><div class="b eq"><strong>기타포괄손익 5</strong><small>→ 기타포괄손익누계액</small></div><span class="ar">+</span><div class="b"><strong>유상증자</strong><small>→ 납입자본</small></div><span class="ar">−</span><div class="b"><strong>배당</strong><small>→ 이익잉여금 차감</small></div><span class="ar">=</span><div class="b eq"><strong>기말자본 145</strong></div></div>
+<div class="fm">수익 − 비용 = 당기순이익 · 당기순이익 ± 기타포괄손익 = 총포괄이익<br>기말이익잉여금 = 기초 + 당기순이익 − 배당 · 기초현금 + 영업·투자·재무 현금흐름 = 기말현금</div>
+
+<h3>회계기준 연표</h3>
+<svg viewBox="0 0 640 110" role="img" aria-label="회계기준 연표">
+<line x1="30" y1="50" x2="610" y2="50" stroke="var(--mut)" stroke-width="2"/>
+<g text-anchor="middle" font-size="12"><circle cx="60" cy="50" r="6" fill="var(--as)"/><text x="60" y="34" font-weight="700">1958</text><text x="60" y="76">회계기준 최초 제정</text>
+<circle cx="200" cy="50" r="6" fill="var(--as)"/><text x="200" y="34" font-weight="700">1997</text><text x="200" y="76">외환위기 → 민간 제정기구 요구</text>
+<circle cx="355" cy="50" r="6" fill="var(--as)"/><text x="355" y="34" font-weight="700">1999</text><text x="355" y="76">한국회계기준원(KAI) 신설</text>
+<circle cx="490" cy="50" r="6" fill="var(--ex)"/><text x="490" y="34" font-weight="700">2011</text><text x="490" y="76">상장사 K-IFRS 의무</text>
+<circle cx="590" cy="50" r="6" fill="var(--li)"/><text x="590" y="34" font-weight="700">2027</text><text x="590" y="76">IFRS 18 적용</text></g></svg>
+<p class="mut">K-IFRS는 원칙중심(과거 국내는 규칙중심) · 비상장은 일반기업회계기준(K-GAAP) · IASB가 IFRS 제정, ISSB가 지속가능성 공시기준 S1(개념체계)·S2(기후) 제정</p>
+
+<h2 id="c2">2장. 회계순환과정 I (기중 회계처리)</h2>
+<h3>회계거래 판별</h3>
+<div class="row"><div class="b eq"><strong>회계거래 O</strong><small>출자, 차입, 비품 구입, 외상 매출, 비용 지급: 자산·부채·자본·수익·비용이 변하고 화폐로 측정됨</small></div><div class="b ex"><strong>회계거래 X</strong><small>계약만 체결 (여행상품 계약, 서비스 제공받기로 한 계약): 재무제표 요소에 변화 없음</small></div></div>
+<p>거래의 이중성: 한 거래는 항상 2개 이상 항목에 영향 → 복식부기 → <b>차변합계 = 대변합계</b></p>
+
+<h3>계정기입 원칙: 증가하는 쪽이 어디인가</h3>
+<svg viewBox="0 0 640 250" role="img" aria-label="T계정 기입원칙">
+<text x="320" y="22" text-anchor="middle" font-weight="700" font-size="15">T-계정</text>
+<line x1="320" y1="34" x2="320" y2="240" stroke="var(--fg)" stroke-width="2.5"/><line x1="20" y1="34" x2="620" y2="34" stroke="var(--fg)" stroke-width="2.5"/>
+<text x="170" y="58" text-anchor="middle" font-weight="700">차변 (왼쪽)</text><text x="470" y="58" text-anchor="middle" font-weight="700">대변 (오른쪽)</text>
+<g font-size="14" text-anchor="middle">
+<rect x="40" y="70" width="260" height="32" rx="6" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="170" y="91" fill="var(--as)" font-weight="700">자산 ↑ 증가</text>
+<rect x="40" y="108" width="260" height="32" rx="6" fill="var(--sf)" stroke="var(--ex)" stroke-width="2"/><text x="170" y="129" fill="var(--ex)" font-weight="700">비용 ↑ 증가</text>
+<rect x="40" y="146" width="260" height="88" rx="6" fill="none" stroke="var(--bd)"/><text x="170" y="172">부채 ↓ 감소</text><text x="170" y="196">자본 ↓ 감소</text><text x="170" y="220">수익 ↓ 감소</text>
+<rect x="340" y="70" width="260" height="32" rx="6" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="470" y="91" fill="var(--li)" font-weight="700">부채 ↑ 증가</text>
+<rect x="340" y="108" width="260" height="32" rx="6" fill="var(--sf)" stroke="var(--eq)" stroke-width="2"/><text x="470" y="129" fill="var(--eq)" font-weight="700">자본 ↑ 증가</text>
+<rect x="340" y="146" width="260" height="32" rx="6" fill="var(--sf)" stroke="var(--eq)" stroke-width="2"/><text x="470" y="167" fill="var(--eq)" font-weight="700">수익 ↑ 증가</text>
+<rect x="340" y="184" width="260" height="50" rx="6" fill="none" stroke="var(--bd)"/><text x="470" y="206">자산 ↓ 감소</text><text x="470" y="226">비용 ↓ 감소</text></g></svg>
+<div class="key">암기: <b>자산·비용은 차변에서 증가</b>, 부채·자본·수익은 대변에서 증가. 감소는 항상 반대편.</div>
+
+<h3>분개 예시 한눈에 (㈜덕송서비스)</h3>
+<div class="tw"><table><tr><th>거래</th><th>차변</th><th>대변</th></tr>
+<tr><td>주식 발행 5천만</td><td>현금</td><td>자본금</td></tr>
+<tr><td>임차료 연 2,400만 선지급</td><td>선급임차료(자산)</td><td>현금</td></tr>
+<tr><td>소모품 구입 800만</td><td>소모품(자산)</td><td>현금</td></tr>
+<tr><td>은행 차입 1천만</td><td>현금</td><td>단기차입금</td></tr>
+<tr><td>광고비 100만 지급</td><td>광고선전비(비용)</td><td>현금</td></tr>
+<tr><td>컨설팅 현금 1,500만 / 외상 1,200만</td><td>현금 / 매출채권</td><td>매출</td></tr>
+<tr><td>서비스 전에 2,000만 수령</td><td>현금</td><td><b>선수수익(부채)</b></td></tr>
+<tr><td>외상대금 600만 회수</td><td>현금</td><td>매출채권 (수익 아님)</td></tr>
+<tr><td>보험료 120만 선지급 / 급여 550만</td><td>선급보험료 / 급여</td><td>현금</td></tr></table></div>
+<p class="mut">현금 잔액 = 6,100만 + 1,500만 + 2,000만 + 600만 + 1,000만 − (2,400 + 800 + 100 + 120 + 550)만 = 6,130만 · 시산표 합계 107,000,000</p>
+
+<h3>인식과 발생주의</h3>
+<div class="row"><div class="b"><strong>인식 조건 (둘 다)</strong><small>① 경제적 효익 유입·유출 가능성 높음<br>② 신뢰성 있게 측정 가능</small></div><div class="b as"><strong>수익 = 가득 ∧ 실현</strong><small>가득: 재화·용역 제공, 통제권 이전<br>실현: 현금 또는 현금청구권 수취<br>선수금은 가득 미충족</small></div><div class="b ex"><strong>비용 = 대응의 원칙</strong><small>수익 인식 기간에 같이 인식 (예: 판매 시 매출원가)</small></div></div>
+<div class="tw"><table><tr><th>사례</th><th>발생주의</th><th>현금주의</th></tr><tr><td>외상 매출 10,000</td><td>매출 10,000 인식</td><td>인식 안 함</td></tr><tr><td>비용 8,500 (현금 7,500 + 외상 1,000)</td><td>비용 <b>8,500</b></td><td>비용 <b>7,500</b></td></tr></table></div>
+<p class="mut">재무제표는 현금흐름표만 제외하고 발생주의. 미래 효익이 불확실한 지출(연구비, 광고선전비)은 자산이 아니라 비용.</p>
+
+<h3>회계순환과정 8단계</h3>
+<svg viewBox="0 0 640 150" role="img" aria-label="회계순환 8단계">
+<defs><marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="var(--mut)"/></marker></defs>
+<g font-size="12" text-anchor="middle">
+<rect x="6" y="14" width="140" height="44" rx="8" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="76" y="40">① 거래 식별·측정</text>
+<rect x="176" y="14" width="140" height="44" rx="8" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="246" y="40">② 분개</text>
+<rect x="346" y="14" width="140" height="44" rx="8" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="416" y="40">③ 전기 (원장)</text>
+<rect x="496" y="14" width="138" height="44" rx="8" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="565" y="40">④ 수정전 시산표</text>
+<rect x="496" y="92" width="138" height="44" rx="8" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="565" y="118">⑤ 결산수정·전기</text>
+<rect x="346" y="92" width="140" height="44" rx="8" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="416" y="118">⑥ 수정후 시산표</text>
+<rect x="176" y="92" width="140" height="44" rx="8" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="246" y="118">⑦ 재무제표 작성</text>
+<rect x="6" y="92" width="140" height="44" rx="8" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="76" y="118">⑧ 장부 마감</text></g>
+<g stroke="var(--mut)" stroke-width="1.6" marker-end="url(#ah)"><line x1="146" y1="36" x2="174" y2="36"/><line x1="316" y1="36" x2="344" y2="36"/><line x1="486" y1="36" x2="494" y2="36"/><line x1="565" y1="58" x2="565" y2="90"/><line x1="496" y1="114" x2="488" y2="114"/><line x1="346" y1="114" x2="318" y2="114"/><line x1="176" y1="114" x2="148" y2="114"/></g></svg>
+<p class="mut">파랑 = 2장(1~4단계: 기중) / 주황 = 3장(5~8단계: 결산). 시산표 차대합계가 같아도 오류가 없다는 보장은 없음.</p>
+
+<h2 id="c3">3장. 회계순환과정 II (결산)</h2>
+<h3>결산수정분개 5가지: 2×2 지도</h3>
+<div class="tw"><table><tr><th>기중 처리</th><th>비용 쪽</th><th>수익 쪽</th></tr>
+<tr><td><b>이연</b><br>현금이 먼저, 기중에 분개 O<br>기말에 당기 몫만 옮김</td><td class="as"><b>선급비용</b> (자산)<br>기중 (차)선급비용 (대)현금<br>기말 <b>(차)비용 (대)선급비용</b><br>소모품도 같은 구조: (차)소모품비 (대)소모품</td><td><b>선수수익</b> (부채)<br>기중 (차)현금 (대)선수수익<br>기말 <b>(차)선수수익 (대)수익</b></td></tr>
+<tr><td><b>발생</b><br>현금이 나중, 기중에 분개 X<br>기말에 새로 인식</td><td><b>미지급비용</b> (부채)<br>기말 <b>(차)비용 (대)미지급비용</b></td><td><b>미수수익</b> (자산)<br>기말 <b>(차)미수수익 (대)수익</b></td></tr></table></div>
+<div class="row"><div class="b"><strong>이자</strong><small>100,000 × 12% × 3/12 = 3,000</small></div><div class="b"><strong>보험료</strong><small>60,000 × 3/12 = 15,000</small></div><div class="b"><strong>소모품비</strong><small>구입 10,000 − 기말재고 3,000 = 7,000</small></div></div>
+
+<h3>정산표 흐름</h3>
+<div class="row"><div class="b">① 수정전<br>시산표</div><span class="ar">→</span><div class="b">② 수정분개</div><span class="ar">→</span><div class="b">③ 수정후<br>시산표</div><span class="ar">→</span><div class="b ex">④ 손익계산서<br><small>당기순이익</small></div><div class="b as">⑤ 재무상태표<br><small>당기순이익</small></div></div>
+<div class="key">⑥ 두 곳의 당기순이익이 <b>일치</b>하는지 확인. 예제: 매출 27,000 − 비용(1,000 + 5,500 + 2,000 + 2,700 + 50) = <b>15,750(천원)</b>. 재무상태표의 이익잉여금 = 기초 0 + 15,750.</div>
+
+<h3>장부 마감 흐름</h3>
+<svg viewBox="0 0 640 250" role="img" aria-label="마감 흐름도">
+<g font-size="13" text-anchor="middle">
+<rect x="10" y="20" width="150" height="50" rx="8" fill="var(--sf)" stroke="var(--ex)" stroke-width="2"/><text x="85" y="42" fill="var(--ex)" font-weight="700">비용 계정</text><text x="85" y="60" font-size="11" fill="var(--mut)">임시계정(명목)</text>
+<rect x="480" y="20" width="150" height="50" rx="8" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="555" y="42" fill="var(--as)" font-weight="700">수익 계정</text><text x="555" y="60" font-size="11" fill="var(--mut)">임시계정(명목)</text>
+<rect x="235" y="85" width="170" height="54" rx="8" fill="var(--sf)" stroke="var(--fg)" stroke-width="2"/><text x="320" y="108" font-weight="700">집합손익</text><text x="320" y="127" font-size="11" fill="var(--mut)">임시로 만든 계정</text>
+<rect x="235" y="190" width="170" height="50" rx="8" fill="var(--sf)" stroke="var(--eq)" stroke-width="2"/><text x="320" y="212" fill="var(--eq)" font-weight="700">이익잉여금</text><text x="320" y="230" font-size="11" fill="var(--mut)">영구계정</text></g>
+<g stroke="var(--mut)" stroke-width="1.6" marker-end="url(#ah)" fill="none"><path d="M85 70 L85 112 L233 112"/><path d="M555 70 L555 112 L407 112"/><line x1="320" y1="139" x2="320" y2="188"/></g>
+<g font-size="12"><text x="92" y="100" fill="var(--ex)">② (차)집합손익 (대)비용</text><text x="402" y="100" fill="var(--as)">① (차)수익 (대)집합손익</text><text x="328" y="168" fill="var(--eq)">③ 순이익: (차)집합손익 (대)이익잉여금</text><text x="328" y="182" fill="var(--mut)" font-size="11">순손실이면 반대</text></g></svg>
+<div class="tw"><table><tr><th></th><th>수익·비용 계정</th><th>자산·부채·자본 계정</th></tr><tr><td>이름</td><td>임시계정(명목계정)</td><td>영구계정(실질계정)</td></tr><tr><td>마감</td><td>마감분개로 잔액 0</td><td><b>분개 없이</b> 차기이월 → 다음 기 첫날 <b>전기이월</b></td></tr></table></div>
+
+<h2 id="c4">4장. 개념체계와 재무제표 표시</h2>
+<h3>개념체계 구조</h3>
+<div class="row"><div class="b as"><strong>재무보고 목적</strong><small>외부이용자의 자원제공 의사결정에 유용한 정보</small></div><span class="ar">↓</span><div class="b as"><strong>기본가정: 계속기업</strong><small>역사적 원가 기록의 근거</small></div><span class="ar">↓</span><div class="b as"><strong>질적 특성</strong><small>아래 트리</small></div><span class="ar">↓</span><div class="b as"><strong>구성요소</strong><small>자산·부채·자본 / 수익·비용</small></div></div>
+<svg viewBox="0 0 640 170" role="img" aria-label="질적 특성 트리">
+<g font-size="13" text-anchor="middle"><rect x="240" y="8" width="160" height="34" rx="8" fill="var(--sf)" stroke="var(--fg)" stroke-width="2"/><text x="320" y="30" font-weight="700">유용한 재무정보</text>
+<rect x="30" y="70" width="190" height="34" rx="8" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="125" y="92" fill="var(--as)" font-weight="700">근본적 (2)</text>
+<rect x="320" y="70" width="300" height="34" rx="8" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="470" y="92" fill="var(--li)" font-weight="700">보강적 (4)</text>
+<rect x="10" y="125" width="105" height="38" rx="6" fill="var(--card)" stroke="var(--as)"/><text x="62" y="141" font-size="12">목적적합성</text><text x="62" y="156" font-size="10" fill="var(--mut)">의사결정에 차이</text>
+<rect x="125" y="125" width="105" height="38" rx="6" fill="var(--card)" stroke="var(--as)"/><text x="177" y="141" font-size="12">충실한 표현</text><text x="177" y="156" font-size="10" fill="var(--mut)">완전·중립·무오류</text>
+<rect x="250" y="125" width="85" height="38" rx="6" fill="var(--card)" stroke="var(--li)"/><text x="292" y="141" font-size="12">비교가능성</text><text x="292" y="156" font-size="10" fill="var(--mut)">기간·기업 간</text>
+<rect x="345" y="125" width="85" height="38" rx="6" fill="var(--card)" stroke="var(--li)"/><text x="387" y="141" font-size="12">검증가능성</text><text x="387" y="156" font-size="10" fill="var(--mut)">독립 측정 유사</text>
+<rect x="440" y="125" width="85" height="38" rx="6" fill="var(--card)" stroke="var(--li)"/><text x="482" y="141" font-size="12">적시성</text><text x="482" y="156" font-size="10" fill="var(--mut)">영향 소멸 전</text>
+<rect x="535" y="125" width="95" height="38" rx="6" fill="var(--card)" stroke="var(--li)"/><text x="582" y="141" font-size="12">이해가능성</text><text x="582" y="156" font-size="10" fill="var(--mut)">쉽게 이해</text></g>
+<g stroke="var(--mut)" fill="none"><path d="M320 42 L320 56 L125 56 L125 70"/><path d="M320 56 L470 56 L470 70"/><path d="M125 104 L125 114 M62 114 L177 114 M62 114 L62 125 M177 114 L177 125"/><path d="M470 104 L470 114 M292 114 L582 114 M292 114 L292 125 M387 114 L387 125 M482 114 L482 125 M582 114 L582 125"/></g></svg>
+
+<h3>유동 / 비유동 기준</h3>
+<svg viewBox="0 0 640 100" role="img" aria-label="유동 비유동 기준선">
+<line x1="30" y1="50" x2="610" y2="50" stroke="var(--mut)" stroke-width="2"/>
+<rect x="30" y="38" width="190" height="24" fill="var(--as)" opacity=".85"/><text x="125" y="55" text-anchor="middle" font-size="12" fill="#fff">12개월 이내 / 영업주기 → 유동</text>
+<text x="330" y="55" text-anchor="middle" font-size="13">그 이후 → 비유동</text>
+<line x1="220" y1="26" x2="220" y2="76" stroke="var(--ex)" stroke-width="2.5"/><text x="220" y="94" text-anchor="middle" font-size="12">결산일 +1년</text></svg>
+<p class="mut">유동성장기차입금: 장기차입금 중 1년 내 만기분 → <b>유동부채</b> · 영업권, 특허권 → 무형자산(비유동) · 표시방식: 계정식(좌 자산, 우 부채·자본) / 보고식(위아래)</p>
+
+<h3>포괄손익계산서 이익 단계 (교재 예시, 단위 원)</h3>
+<div>
+<div class="bar"><span>매출액</span><i class="s" style="width:100%"></i><span>390,000</span></div>
+<div class="bar"><span>− 매출원가</span><i class="n" style="width:63%"></i><span>245,000</span></div>
+<div class="bar"><span><b>매출총이익</b></span><i style="width:37%"></i><span>145,000</span></div>
+<div class="bar"><span>− 판관비</span><i class="n" style="width:9%"></i><span>35,000</span></div>
+<div class="bar"><span><b>영업이익</b></span><i style="width:28%"></i><span>110,000</span></div>
+<div class="bar"><span>± 기타·금융</span><i class="s" style="width:2%"></i><span>+14,500 −2,100 −5,000</span></div>
+<div class="bar"><span><b>세전순이익</b></span><i style="width:30%"></i><span>117,400</span></div>
+<div class="bar"><span>− 법인세비용</span><i class="n" style="width:12%"></i><span>45,300</span></div>
+<div class="bar"><span><b>당기순이익</b></span><i style="width:18%"></i><span>72,100</span></div>
+<div class="bar"><span>+ 기타포괄손익</span><i class="s" style="width:7%"></i><span>29,000</span></div>
+<div class="bar"><span><b>총포괄이익</b></span><i style="width:26%"></i><span>101,100</span></div>
+</div>
+<p class="mut">1년 단위 = 연차재무제표 / 1년 미만 = 중간재무보고(분기, 반기)</p>
+
+<div class="row"><div class="b"><strong>EPS</strong><small>당기순손익 ÷ 주식수 (손익계산서 하단 공시)</small></div><div class="b"><strong>PER</strong><small>주가 ÷ EPS · 성장산업일수록 높음</small></div><div class="b"><strong>PBR</strong><small>주가 ÷ 주당자본</small></div></div>
+
+<h3>별도 vs 연결재무제표</h3>
+<svg viewBox="0 0 640 130" role="img" aria-label="연결재무제표 구조">
+<g font-size="13" text-anchor="middle"><rect x="20" y="20" width="140" height="44" rx="8" fill="var(--sf)" stroke="var(--as)" stroke-width="2"/><text x="90" y="40" font-weight="700">지배회사</text><text x="90" y="56" font-size="11" fill="var(--mut)">별도 + 연결 작성</text>
+<rect x="220" y="8" width="120" height="32" rx="8" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="280" y="29">종속회사 A</text>
+<rect x="220" y="48" width="120" height="32" rx="8" fill="var(--sf)" stroke="var(--li)" stroke-width="2"/><text x="280" y="69">종속회사 B</text>
+<rect x="400" y="14" width="220" height="68" rx="10" fill="none" stroke="var(--eq)" stroke-width="2.5" stroke-dasharray="5 3"/><text x="510" y="42" fill="var(--eq)" font-weight="700">하나의 경제적 실체</text><text x="510" y="62" font-size="11" fill="var(--mut)">연결재무제표 = 주된 재무제표</text></g>
+<g stroke="var(--mut)" fill="none" stroke-width="1.6" marker-end="url(#ah)"><path d="M160 36 L218 24"/><path d="M160 48 L218 62"/><path d="M340 44 L398 44"/></g>
+<text x="20" y="112" font-size="12" fill="var(--mut)">별도재무제표 = 개별 기업 하나만 대상. 지배회사가 종속회사를 지배하는 투자회사.</text></svg>
+
+<h3>보론: IFRS 18 (2024 제정, 2027 적용)</h3>
+<div class="row"><div class="b ex"><strong>영업 범주</strong><small>정의 확대: 매출~영업손익</small></div><div class="b as"><strong>투자 범주</strong><small>관계기업·기타기업 투자수익 구분 (필수적 관계기업은 영업 쪽)</small></div><div class="b li"><strong>재무 범주</strong><small>재무활동 손익</small></div><div class="b"><strong>법인세 범주</strong><small>법인세비용</small></div></div>
+
+<h3>시험 직전 한 줄 체크</h3>
+<div class="key warn">① 계약만 맺으면 회계거래 아님 ② 자산·비용은 차변 증가 ③ 선수수익=부채, 선급비용=자산 ④ 발생 vs 현금주의 금액 차이 ⑤ 결산수정 5가지 분개 방향 ⑥ 마감 순서: 수익·비용 → 집합손익 → 이익잉여금 ⑦ 기타포괄손익은 이익잉여금이 아니라 기타포괄손익누계액 ⑧ 질적 특성 근본 2 + 보강 4 ⑨ 유동 = 12개월 이내</div>
+</main></body></html>
